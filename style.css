@@ -1,0 +1,193 @@
+/*Forms css*/
+.hiddenDiv {
+    display: none;
+}
+
+.collapsedPortlet:after {
+    content: '\25BC';
+    color: #777;
+    font-weight: bold;
+    float: left;
+    margin-left: 5px;
+}
+
+.activePortlet:after {
+    content: "\25B2";
+    color: #777;
+    font-weight: bold;
+    float: left;
+    margin-left: 5px;
+}
+
+.White_Link {
+    color: white;
+    text-decoration: underline;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+}
+
+.grid-item {
+    background-color: white;
+    color: black;
+    padding: 2px;
+}
+
+.ImgButtons {
+    width: 100px;
+}
+
+.PanelImage {
+    width: 100%;
+    margin: auto;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    background-color: white;
+    border-width: thin;
+    border-color: #41B6E6;
+    overflow-x: hidden;
+    transition: 0s;
+    padding-top: 60px;
+}
+
+.closebtn {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.LayoutParent {
+    display: grid;
+    grid-template-columns: 6fr 2fr 1fr;
+    grid-template-rows: repeat(3);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: #0055A5;
+}
+
+.Layout1 {
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: #f0f0f0;
+}
+
+.Layout2 {
+    grid-area: 1 / 3/ 2 / 4;
+    background-color: #f0f0f0;
+}
+
+.Layout3 {
+    grid-area: 2 / 1 / 4 / 3;
+    background-color: #0055A5;
+    color: white;
+    font-size: 1.25em;
+}
+
+.Layout4 {
+    grid-area: 2 / 3 / 3 / 4;
+    color: white;
+    background-color: #0055A5;
+}
+
+.Layout5 {
+    grid-area: 3 / 3 / 4 / 4;
+    color: white;
+    background-color: #0055A5;
+}
+
+.Layout6 {
+    grid-area: 4 / 1 / 5 / 4;
+    background-color: white;
+}
+
+.Layout7 {
+    grid-area: 5 / 1 / 6 / 4;
+    background-color: white;
+}
+
+@media (max-width: 600px) {
+    .LayoutParent {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .Layout1 {
+        grid-area: 2 / 1 / 3 / 2;
+        background-color: #f0f0f0;
+    }
+
+    .Layout2 {
+        grid-area: 1 / 1/ 2 / 2;
+        background-color: #f0f0f0;
+        display: none;
+    }
+
+    .Layout3 {
+        grid-area: 3 / 1 / 4 / 2;
+        background-color: #0055A5;
+        color: white;
+        font-size: 1.25em;
+    }
+
+    .Layout4 {
+        grid-area: 4 / 1 / 5 / 2;
+        color: white;
+        background-color: #0055A5;
+        display: none;
+    }
+
+    .Layout5 {
+        grid-area: 5 / 1 / 6 / 2;
+        color: white;
+        background-color: #005eb8;
+        display: none;
+    }
+
+    .Layout6 {
+        grid-area: 6 / 1 / 7 / 2;
+    }
+
+    .Layout7 {
+        grid-area: 7 / 1 / 8 / 2;
+    }
+}
+
+.Guide_image {
+    max-width: 400px;
+    transition: transform 0.3s ease-in-out;
+    /* Smooth transition */
+}
+
+.Guide_image:hover {
+    transform: translateX(-50%) scale(2.5);
+    /* Move the image 50% to the left and scale it to 200% */
+}
